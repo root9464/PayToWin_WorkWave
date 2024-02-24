@@ -1,6 +1,6 @@
 /* eslint-disable */
-import { GrpcMethod, GrpcStreamMethod } from "@nestjs/microservices";
-import { Observable } from "rxjs";
+import { GrpcMethod, GrpcStreamMethod } from "../../../client/node_modules/@nestjs/microservices";
+import { Observable } from "../../../client/node_modules/rxjs";
 
 export const protobufPackage = "file";
 
