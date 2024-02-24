@@ -22,7 +22,41 @@ microservices/
     ├── orderrepository.go
     └── order.go
 ```
+> эта же архитектура токо на NestJs:
 
+```
+microservices/
+├── users/
+│   ├── src/
+│   │   ├── users.module.ts
+│   │   ├── users.controller.ts
+│   │   ├── users.service.ts
+│   │   ├── user.entity.ts
+│   │   ├── user.repository.ts
+│   ├── test/
+│   ├── package.json
+│   └── tsconfig.json
+├── products/
+│   ├── src/
+│   │   ├── products.module.ts
+│   │   ├── products.controller.ts
+│   │   ├── products.service.ts
+│   │   ├── product.entity.ts
+│   │   ├── product.repository.ts
+│   ├── test/
+│   ├── package.json
+│   └── tsconfig.json
+└── orders/
+    ├── src/
+    │   ├── orders.module.ts
+    │   ├── orders.controller.ts
+    │   ├── orders.service.ts
+    │   ├── order.entity.ts
+    │   ├── order.repository.ts
+    ├── test/
+    ├── package.json
+    └── tsconfig.json
+```
 ### Рекомендации по использованию: 
 > 1. Ясное определение границ сервисов: Определите четкие границы между микросервисами, чтобы избежать излишней сложности и проблем интеграции.
 > 2. Управление конфигурацией: Используйте управление конфигурацией для централизованного управления конфигурацией микросервисов.
