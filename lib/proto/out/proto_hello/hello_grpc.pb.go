@@ -2,9 +2,9 @@
 // versions:
 // - protoc-gen-go-grpc v1.2.0
 // - protoc             v4.25.2
-// source: file.proto
+// source: hello.proto
 
-package __
+package proto
 
 import (
 	context "context"
@@ -101,5 +101,5 @@ var GetHello_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "file.proto",
+	Metadata: "hello.proto",
 }
