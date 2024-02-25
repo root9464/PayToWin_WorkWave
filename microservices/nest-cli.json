@@ -7,7 +7,7 @@
     "deleteOutDir": true,
     "webpack": true,
     "tsConfigPath": "apps/hello-svc/tsconfig.app.json",
-    "assets": ["proto/*.proto"],
+    "assets": ["proto/hello/*.proto"],
     "watchAssets": true
   },
   "monorepo": true,
@@ -21,7 +21,7 @@
       "compilerOptions": {
         "deleteOutDir": true,
         "tsConfigPath": "apps/hello-svc/tsconfig.app.json",
-        "assets": ["proto/*.proto"],
+        "assets": ["proto/hello/*.proto"],
         "watchAssets": true
       }
     },
