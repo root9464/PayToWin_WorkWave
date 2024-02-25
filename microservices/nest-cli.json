@@ -6,25 +6,30 @@
   "compilerOptions": {
     "deleteOutDir": true,
     "webpack": true,
-    "tsConfigPath": "apps/microservices/tsconfig.app.json"
+    "tsConfigPath": "apps/hello-svc/tsconfig.app.json",
+    "assets": ["proto/*.proto"],
+    "watchAssets": true
   },
   "monorepo": true,
-  "root": "apps/microservices",
+  "root": "apps/hello-svc",
   "projects": {
     "hello-svc": {
       "type": "application",
       "root": "apps/hello-svc",
       "entryFile": "src/main",
-      "sourceRoot": "apps/hello-svc/src",
+      "sourceRoot": "./",
       "compilerOptions": {
-        "tsConfigPath": "apps/hello-svc/tsconfig.app.json"
+        "deleteOutDir": true,
+        "tsConfigPath": "apps/hello-svc/tsconfig.app.json",
+        "assets": ["proto/*.proto"],
+        "watchAssets": true
       }
     },
     "user-svc": {
       "type": "application",
       "root": "apps/user-svc",
       "entryFile": "src/main",
-      "sourceRoot": "apps/user-svc/src",
+      "sourceRoot": "./",
       "compilerOptions": {
         "tsConfigPath": "apps/user-svc/tsconfig.app.json"
       }

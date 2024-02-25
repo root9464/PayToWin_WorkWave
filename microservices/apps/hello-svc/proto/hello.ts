@@ -2,13 +2,13 @@
 import { GrpcMethod, GrpcStreamMethod } from "@nestjs/microservices";
 import { Observable } from "rxjs";
 
-export const protobufPackage = "file";
+export const protobufPackage = "hello";
 
 export interface HelloWorldResponse {
   message: string;
 }
 
-export const FILE_PACKAGE_NAME = "file";
+export const HELLO_PACKAGE_NAME = "hello";
 
 export interface GetHelloClient {
   helloWorld(request: HelloWorldResponse): Observable<HelloWorldResponse>;
