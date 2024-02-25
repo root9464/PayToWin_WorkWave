@@ -1,4 +1,4 @@
-import { HelloWorldResponse } from '../proto/hello';
+import { HelloWorldResponse } from '../../../proto/hello';
 import { Injectable } from '@nestjs/common';
 
 @Injectable()
