@@ -11,7 +11,7 @@ async function bootstrap() {
       options: {
         url: '0.0.0.0:50051',
         package: 'hello',
-        protoPath: join(__dirname, '../hello/hello.proto'),
+        protoPath: join(__dirname, '../hello-svc/proto/hello.proto'),
       }
     }
   )

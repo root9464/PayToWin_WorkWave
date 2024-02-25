@@ -1,7 +1,7 @@
 import { Controller, Get } from '@nestjs/common';
 import { HelloSvcService } from './hello-svc.service';
 
-import { HelloWorldResponse } from '../../../proto/hello/hello';
+import { HelloWorldResponse } from '../proto/hello';
 import { GrpcMethod } from '@nestjs/microservices';
 
 @Controller()
