@@ -5,7 +5,7 @@ import (
 	"log"
 	"time"
 
-	pb "root/lib/proto/out"
+	pb "root/lib/proto/out/proto_hello"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/logger"
