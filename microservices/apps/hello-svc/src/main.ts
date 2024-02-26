@@ -9,7 +9,7 @@ async function bootstrap() {
     {
       transport: Transport.GRPC,
       options: {
-        url: '0.0.0.0:50051',
+        url: '0.0.0.0:3000',
         package: 'hello',
         protoPath: join(__dirname, '../hello-svc/proto/hello.proto'),
       }
