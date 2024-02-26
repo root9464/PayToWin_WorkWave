@@ -43,7 +43,7 @@ func main() {
 
 	AllRoutes(app, microserviceClient)
 
-	log.Fatal(app.Listen(":3001"))
+	log.Fatal(app.Listen(":6069"))
 }
 
 // server1 := grpc.NewServer()
